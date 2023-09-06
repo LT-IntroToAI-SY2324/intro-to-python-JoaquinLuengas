@@ -60,6 +60,9 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    #for x in range(0,5,2):
+    #lst
+
     raise NotImplementedError("every_other")
 
 
