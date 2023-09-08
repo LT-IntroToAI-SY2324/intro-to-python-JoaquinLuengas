@@ -63,7 +63,6 @@ def every_other(lst: List[T]) -> List[T]:
     lst=[lst[0],lst[2],lst[4]]
     return lst
 
-    #raise NotImplementedError("every_other")
 
 
 def sum_list(lst: List[int]) -> int:
@@ -76,7 +75,12 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    #for x in range(0,2):
+    y=lst[0]+lst[1]+lst[2]
+    lst=[y]
+    return lst
+
+    #raise NotImplementedError("sum_list")
 
 
 def mean(lst: List[int]) -> float:
