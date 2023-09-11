@@ -75,12 +75,11 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    #for x in range(0,2):
-    y=lst[0]+lst[1]+lst[2]
-    lst=[y]
+    total=0
+    for ele in range(0, len(lst)):
+        total=total+lst[ele]
+    lst=total
     return lst
-
-    #raise NotImplementedError("sum_list")
 
 
 def mean(lst: List[int]) -> float:
@@ -92,8 +91,14 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
-
+    total=0
+    divi=5
+    for ele in range(0, len(lst)):
+        total=total+lst[ele]
+    lst=total
+    divi=lst/divi
+    lst=divi
+    return lst
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
