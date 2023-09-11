@@ -75,7 +75,7 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    total=0
+    total=0#Used ChatGPT to help
     for ele in range(0, len(lst)):
         total=total+lst[ele]
     lst=total
@@ -91,7 +91,7 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    total=0
+    total=0#Used ChatGPT to help
     divi=5
     for ele in range(0, len(lst)):
         total=total+lst[ele]
@@ -112,7 +112,13 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    lst.sort()#Used ChatGPT to help
+    x=len(lst)
+    y=x//2
+    if x % 2==0:
+        return(lst[y-1]+lst[y])/2
+    else:
+        return lst[y]
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
