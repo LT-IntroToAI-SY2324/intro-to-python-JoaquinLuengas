@@ -14,10 +14,14 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
+My initial thoughts about the python language is that is is a medium difficulty programming language and is not easily understood but not hard.
 
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
+Python similar to HTML is a bit simple but not complex, although can be difficlut to learn depending if you had any prior experience or not.
 
 
 3. What are some things that you learned through this assignment?
+
+Some things that I learned form thsi assignment are that not all example code given is perfect and sometimes you will need to seek help from other people or from other resources.You also need to constantly troubleshoot your program to make sure it works correctly and not to the point where you have so much code, you make a mistake and cannot find it.There is also no one way to code in an answer to a problem, there are many ways to do so.
