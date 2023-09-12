@@ -60,8 +60,7 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    lst=[lst[0],lst[2],lst[4]]
-    return lst
+    return lst[::2]#Used ChatGPT for help
 
 
 
@@ -140,9 +139,30 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    if len(lst)>2:
-        
-    #raise NotImplementedError("duck_duck_goose")
+    #1st Idea
+    #List names = ["roscoe", "kim", "woz", "solin", "law", "remess"] Return ["roscoe", "law"]
+    #while len(lst)>2:
+        #lst=lst[::2]
+    #print(lst)
+    #return lst
+    #Final Idea
+    print("Starting player is",lst[0])
+    while len(lst)>5:
+        print("Duck",lst[5])
+        lst=[lst[0],lst[1],lst[2],lst[3],lst[4]]
+    while len(lst)>4:
+        print("Duck",lst[3])
+        lst=[lst[0],lst[1],lst[2],lst[4]]
+    while len(lst)>3:
+        print("Duck",lst[2])
+        lst=[lst[0],lst[1],lst[3]]
+    while len(lst)>2:
+        print("Duck",lst[1])
+        lst=[lst[0],lst[2]]
+    if len(lst)==2:
+        print("Players Left:",lst[0],"and",lst[1])
+        print(lst[1],"is the goose")
+    return lst
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
